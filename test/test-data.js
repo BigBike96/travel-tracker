@@ -1,4 +1,4 @@
-const userData = {
+const travelersData = {
   "travelers": [
     {
       "id": 1,
@@ -777,3 +777,10 @@ const destinations = {
     }
   ]
 };
+
+module.exports = {
+  travelersData,
+  individualTraveler,
+  trips,
+  destinations
+}
