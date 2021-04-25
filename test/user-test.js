@@ -1,10 +1,10 @@
-import chai from 'chai';
-import { userData } from "./test-data.js";
-import { individualUser } from "./test-data.js";
-import { trips } from "./test-data.js";
-import { destinations } from "./test-data.js";
-const expect = chai.expect;
-import User from "../User.js";
+// import chai from 'chai';
+// import { userData } from "./test-data.js";
+// import { individualUser } from "./test-data.js";
+// import { trips } from "./test-data.js";
+// import { destinations } from "./test-data.js";
+// const expect = chai.expect;
+// import User from "../User.js";
 
 // const individualUser = {
 // "id": 1,
@@ -12,28 +12,34 @@ import User from "../User.js";
 // "travelerType": "relaxer"
 // };
 
+//
+// describe('Traveler', () => {
+//   let user1, user2;
+//
+//   beforeEach(() => {
+//     user1 = new User(userData);
+//   });
+//
+//   it('User should be a function', () => {
+//     expect(User).to.be.a('function');
+//   });
+//
+//   it('Should have an id number', () => {
+//     expect(user1.id).to.equal(1)
+//   })
 
-describe('Traveler', () => {
-  let user1, user2;
-
-  beforeEach(() => {
-    user1 = new User()
-  });
-});
-
-  it('User should be a function', () => {
-
-  })
-
-
-  it('Should be able to show me all of my trips', () => {
-    expect().to.equal();
-});
+  // it('Should be able to show me all of my trips', () => {
+  //   expect().to.equal();
+  // });
+// });
 
 
 // iteration 1
 // should be able to show me all of my trips
 //  A: filter method will get my trips return trip.userID === user.id
+
+
+
 
 // should be able to tell me if a trip is past, present, upcomming, or pending
 //  A: forEach method or map method trip and compare trip.date to current date (moment.js library) if trip.date < currentDate return 'past' ... (repeat for others)
