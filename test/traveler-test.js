@@ -4,7 +4,7 @@ import { individualTraveler } from "./test-data.js";
 import { trips } from "./test-data.js";
 import { destinations } from "./test-data.js";
 const expect = chai.expect;
-import Traveler from "../Traveler.js";
+import Traveler from "../src/Traveler.js";
 
 // const individualTraveler = {
 // "id": 1,
@@ -26,12 +26,12 @@ describe('Traveler', () => {
 
   it('Should have an id number', () => {
     expect(traveler1.id).to.equal(1)
-  })
+  });
 
   // it('Should be able to show me all of my trips', () => {
   //   expect().to.equal();
   // });
-// });
+ });
 
 
 // iteration 1
