@@ -253,7 +253,7 @@ const userData = {
   ]
 };
 
-const individualUser = {
+const individualTraveler = {
   "id": 1,
   "name": "Ham Leadbeater",
   "travelerType": "relaxer"
