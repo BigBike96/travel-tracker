@@ -1,10 +1,12 @@
 import chai from 'chai';
-import { userData } from "./test-data.js";
-import { individualTraveler } from "./test-data.js";
-import { trips } from "./test-data.js";
-import { destinations } from "./test-data.js";
 const expect = chai.expect;
+
 import Traveler from "../src/Traveler.js";
+
+import {individualTraveler} from "./test-data.js";
+// import travelersData from "./test-data.js";
+// import { trips } from "./test-data.js";
+// import { destinations } from "./test-data.js";
 
 // const individualTraveler = {
 // "id": 1,
@@ -12,16 +14,17 @@ import Traveler from "../src/Traveler.js";
 // "travelerType": "relaxer"
 // };
 
+let traveler1;
 
 describe('Traveler', () => {
-  let traveler1, traveler2;
 
   beforeEach(() => {
-    traveler1 = new Traveler(userData);
+    traveler1 = new Traveler(individualTraveler);
+    console.log(traveler1);
   });
 
   it('User should be a function', () => {
-    expect(Traveler).to.be.a('function');
+    expect(traveler1).to.be.an.instanceof(Traveler);
   });
 
   it('Should have an id number', () => {
